@@ -35,22 +35,37 @@ Logical circuit of the above expressions is given below:
 Figure 02  Encoder 8 * 3
 
 **Procedure**
+1.Type the program in Quartus software. <br>
+2.Compile and run the program.  <br>
+3.Generate the RTL schematic and save the logic diagram.  <br>
+4.Create nodes for inputs and outputs to generate the timing diagram.  <br>
+5.For different input combinations generate the timing diagram. <br>
 
-/* write all the steps invloved */
 
 **PROGRAM**
-
-/* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
-
-Developed by: RegisterNumber:
-*/
-
+```
+module encoder(a0,a1,a2,d0,d1,d2,d3,d4,d5,d6,d7);
+input d0,d1,d2,d3,d4,d5,d6,d7;
+output a0,a1,a2;
+assign a0=d1|d3|d5|d7;
+assign a1=d2|d3|d6|d7;
+assign a2=d4|d5|d6|d7;
+endmodule
+Developed by: RegisterNumber:212223100055
+```
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
+
+![encoder](https://github.com/arulsuriyalokeshy/ENCODER8TO3DATAFLOW/assets/149130151/2427dfe6-0b38-4c94-9d98-91849ea1b314)
+
 
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
 
-**RESULTS**
+![image](https://github.com/arulsuriyalokeshy/ENCODER8TO3DATAFLOW/assets/149130151/571bb961-5844-4717-b6b1-70a10f19a1fe)
 
+
+
+**RESULTS**
+Therefore the code has been successfully executed.
 
 
 
